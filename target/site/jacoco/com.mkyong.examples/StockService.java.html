@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>StockService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">maven-code-coverage</a> &gt; <a href="index.source.html" class="el_package">com.mkyong.examples</a> &gt; <span class="el_source">StockService.java</span></div><h1>StockService.java</h1><pre class="source lang-java linenums">package com.mkyong.examples;
+
+public class StockService {
+
+    private int qtyOnHand;
+
+<span class="fc" id="L7">    public StockService(int qtyOnHand) {</span>
+<span class="fc" id="L8">        this.qtyOnHand = qtyOnHand;</span>
+<span class="fc" id="L9">    }</span>
+
+    private void isValidQty(int qty) {
+<span class="fc bfc" id="L12" title="All 2 branches covered.">        if (qty &lt; 0) {</span>
+<span class="fc" id="L13">            throw new IllegalArgumentException(&quot;Quality should be positive!&quot;);</span>
+        }
+<span class="fc" id="L15">    }</span>
+
+    public int add(int qty) {
+
+<span class="fc" id="L19">        isValidQty(qty);</span>
+<span class="fc" id="L20">        qtyOnHand = qtyOnHand + qty;</span>
+<span class="fc" id="L21">        return qtyOnHand;</span>
+
+    }
+
+    public int deduct(int qty) {
+
+<span class="fc" id="L27">        isValidQty(qty);</span>
+
+<span class="fc" id="L29">        int newQty = qtyOnHand - qty;</span>
+<span class="fc bfc" id="L30" title="All 2 branches covered.">        if (newQty &lt; 0) {</span>
+<span class="fc" id="L31">            throw new IllegalArgumentException(&quot;Out of Stock!&quot;);</span>
+        } else {
+<span class="fc" id="L33">            qtyOnHand = newQty;</span>
+        }
+<span class="fc" id="L35">        return qtyOnHand;</span>
+
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

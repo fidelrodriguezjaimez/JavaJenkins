@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mkyong.examples.TestStockService" time="0.005" tests="9" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="sonar.projectName" value="23_Coppel_TestJenkinsGitHub"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="sonar.login" value="7eb678e177fe0d360298d0e466cd5177166a9b6e"/>
+    <property name="sonar.host.url" value="https://devtools.axity.com/sonarlts"/>
+    <property name="java.class.path" value="C:\AzureCelulaProject\java-maven-junit\target\test-classes;C:\AzureCelulaProject\java-maven-junit\target\classes;C:\Users\Fidel.Rodriguez\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.3.1\junit-jupiter-engine-5.3.1.jar;C:\Users\Fidel.Rodriguez\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\Fidel.Rodriguez\.m2\repository\org\junit\platform\junit-platform-engine\1.3.1\junit-platform-engine-1.3.1.jar;C:\Users\Fidel.Rodriguez\.m2\repository\org\junit\platform\junit-platform-commons\1.3.1\junit-platform-commons-1.3.1.jar;C:\Users\Fidel.Rodriguez\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\Fidel.Rodriguez\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.3.1\junit-jupiter-api-5.3.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Mexico_City"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="user.country" value="MX"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_361\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\FIDEL~1.ROD\AppData\Local\Temp\surefire6177279904884640280\surefirebooter1057473443271117441.jar C:\Users\Fidel.Rodriguez\AppData\Local\Temp\surefire6177279904884640280 2023-07-14T15-03-37_931-jvmRun1 surefire331406468821562015tmp surefire_02437304681252771406tmp"/>
+    <property name="surefire.test.class.path" value="C:\AzureCelulaProject\java-maven-junit\target\test-classes;C:\AzureCelulaProject\java-maven-junit\target\classes;C:\Users\Fidel.Rodriguez\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.3.1\junit-jupiter-engine-5.3.1.jar;C:\Users\Fidel.Rodriguez\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\Fidel.Rodriguez\.m2\repository\org\junit\platform\junit-platform-engine\1.3.1\junit-platform-engine-1.3.1.jar;C:\Users\Fidel.Rodriguez\.m2\repository\org\junit\platform\junit-platform-commons\1.3.1\junit-platform-commons-1.3.1.jar;C:\Users\Fidel.Rodriguez\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\Fidel.Rodriguez\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.3.1\junit-jupiter-api-5.3.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Fidel.Rodriguez"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_361\jre"/>
+    <property name="basedir" value="C:\AzureCelulaProject\java-maven-junit"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\FIDEL~1.ROD\AppData\Local\Temp\surefire6177279904884640280\surefirebooter1057473443271117441.jar;C:\\Users\\Fidel.Rodriguez\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.2\\org.jacoco.agent-0.8.2-runtime.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_361\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_361\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_361\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_361\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_361\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_361\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_361\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_361-b09"/>
+    <property name="user.name" value="Fidel.Rodriguez"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_361\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Fidel.Rodriguez\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\FIDEL~1.ROD\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_361"/>
+    <property name="user.dir" value="C:\AzureCelulaProject\java-maven-junit"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sonar.sources" value="src/main"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="sonar.projectKey" value="23_Coppel_TestJenkinsGitHub"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_361\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowershell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Kubernetes\Minikube;C:\minikube;C:\kube;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Nugget;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\maven-3.9.1\bin;C:\Users\Fidel.Rodriguez\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Visual Studio Code;;C:\Program Files\Docker\Docker\resources\bin;C:\Users\Fidel.Rodriguez\AppData\Local\Microsoft\WindowsApps;C:\Users\Fidel.Rodriguez\.dotnet\tools;C:\Users\Fidel.Rodriguez\AppData\Local\Programs\Fiddler;C:\Users\Fidel.Rodriguez\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Fidel.Rodriguez\AppData\Local\Microsoft\WindowsApps;C:\Users\Fidel.Rodriguez\.dotnet\tools;C:\kube;C:\Users\Fidel.Rodriguez\AppData\Roaming\npm;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.361-b09"/>
+    <property name="java.specification.maintenance.version" value="4"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_361\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testAdd" classname="com.mkyong.examples.TestStockService" time="0"/>
+  <testcase name="testAdd1" classname="com.mkyong.examples.TestStockService" time="0"/>
+  <testcase name="testAdd2" classname="com.mkyong.examples.TestStockService" time="0"/>
+  <testcase name="testAdd3" classname="com.mkyong.examples.TestStockService" time="0"/>
+  <testcase name="testAdd4" classname="com.mkyong.examples.TestStockService" time="0"/>
+  <testcase name="testAdd5" classname="com.mkyong.examples.TestStockService" time="0"/>
+  <testcase name="testAdd6" classname="com.mkyong.examples.TestStockService" time="0"/>
+  <testcase name="testAdd7" classname="com.mkyong.examples.TestStockService" time="0.001"/>
+  <testcase name="testDeduct" classname="com.mkyong.examples.TestStockService" time="0.001"/>
+</testsuite>

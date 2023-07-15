@@ -1,0 +1,4 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+maven-code-coverage,com.mkyong.examples,StockService,0,47,0,4,0,15,0,6,0,4
+maven-code-coverage,com.mkyong.examples,CalculatorService,0,11,1,1,0,5,1,2,0,2
+maven-code-coverage,com.mkyong.examples,MessageBuilder,0,32,0,4,0,6,0,4,0,2

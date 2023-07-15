@@ -1,0 +1,6 @@
+projectKey=23_Coppel_TestJenkinsGitHub
+serverUrl=https://devtools.axity.com/sonarlts
+serverVersion=8.9.3.48735
+dashboardUrl=https://devtools.axity.com/sonarlts/dashboard?id=23_Coppel_TestJenkinsGitHub
+ceTaskId=AYlWN8LAffVMQXcZQhXr
+ceTaskUrl=https://devtools.axity.com/sonarlts/api/ce/task?id=AYlWN8LAffVMQXcZQhXr

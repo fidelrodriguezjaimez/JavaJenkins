@@ -1,0 +1,12 @@
+{
+    "name": "postman",
+    "version": "1.0.0",
+    "description": "postmanrestapi",
+    "scripts": {
+      "testapiQA": "newman run Petstore.postman_collection.json -e Petstorelocal.postman_environment.json -r junit,cli --reporter-junit-export result-tests-QA.xml",
+      "testapiStaging": "newman run Petstore.postman_collection.json -e Petstorestaging.postman_environment.json -r junit,cli --reporter-junit-export result-tests-staging.xml"
+    },
+    "devDependencies": {
+      "newman": "^4.5.1"
+    }
+  }
