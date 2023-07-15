@@ -31,7 +31,7 @@ pipeline {
         -Dsonar.projectName=${SONAR_KEY} \
         -Dsonar.sources=src/main \
         -Dsonar.host.url=${SONAR_SERVER} \
-        -Dsonar.login=${SONAR_TOKEN}
+        -Dsonar.login=${SONAR_TOKEN} \
         -Dsonar.branch.name=${BRANCH_NAME}"
         
         echo 'Scaneo Exitoso'
