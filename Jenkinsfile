@@ -49,7 +49,7 @@ pipeline {
       steps {
         smartcheckScan([
             imageName: "java-imagen:${BUILD_NUMBER}",
-            smartcheckHost: "container.us-1.cloudone.trendmicro.com",
+            smartcheckHost: "smartcheck.example.com",
             smartcheckCredentialsId: "smartcheck-auth",
             preregistryScan: true,
             preregistryCredentialsId: "preregistry-auth",
