@@ -45,11 +45,18 @@ pipeline {
       }
     }
 
+    stage('Run cointainer deepsecurity') {
+      steps {
+        sh 'docker run -d deepsecurity/smartcheck-scan-action:latest'
+        echo 'Build Image succes'
+      }
+    }
+
     stage("Deep Security Smart Check scan") {
       steps {
         smartcheckScan([
             imageName: "java-imagen:${BUILD_NUMBER}",
-            smartcheckHost: "smartcheck.example.com",
+            smartcheckHost: "container.us-1.cloudone.trendmicro.com",
             smartcheckCredentialsId: "smartcheck-auth",
             preregistryScan: true,
             preregistryCredentialsId: "preregistry-auth",
