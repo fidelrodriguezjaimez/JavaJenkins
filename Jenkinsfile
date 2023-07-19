@@ -40,33 +40,34 @@ pipeline {
 
     stage('BuildImage') {
       steps {
-        sh 'docker build -t java-imagen:${BUILD_NUMBER} .'
+        sh 'docker build -t fidelrdgzjmz/java-imagen:${BUILD_NUMBER} .'       
         echo 'Build Image succes'
       }
     }
-
-    stage('Run cointainer deepsecurity') {
+    
+    stage('Push DockerHub') {
       steps {
-        sh 'docker run -d deepsecurity/smartcheck-scan-action:latest'
-        echo 'Build Image succes'
+        sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
+        sh 'docker push fidelrdgzjmz/java-imagen:${BUILD_NUMBER}'
+        echo 'Push Image succes'
       }
-    }
+    }    
 
     stage("Deep Security Smart Check scan") {
       steps {
         smartcheckScan([
-            imageName: "java-imagen:${BUILD_NUMBER}",
+            imageName: "fidelrdgzjmz/java-imagen:${BUILD_NUMBER}",
             smartcheckHost: "container.us-1.cloudone.trendmicro.com",
             smartcheckCredentialsId: "smartcheck-auth",
             preregistryScan: true,
-            preregistryCredentialsId: "preregistry-auth",
+            preregistryCredentialsId: "dockerhub",
         ])
       }
     }
 
     stage('Push Harbor') {
       steps {
-        sh 'docker tag java-imagen:${BUILD_NUMBER} demo.goharbor.io/jenkinsjavaimage/java-imagen:${BUILD_NUMBER}'
+        sh 'docker tag fidelrdgzjmz/java-imagen:${BUILD_NUMBER} demo.goharbor.io/jenkinsjavaimage/java-imagen:${BUILD_NUMBER}'
         sh 'docker login ${HARBOR_URL} -u ${HARBOR_USERNAME} -p ${HARBOR_PASSWORD}'
         sh 'docker push ${HARBOR_URL}/jenkinsjavaimage/java-imagen:${BUILD_NUMBER}'
         sh 'docker rmi ${HARBOR_URL}/jenkinsjavaimage/java-imagen:${BUILD_NUMBER}'
@@ -103,6 +104,7 @@ pipeline {
     HARBOR_URL = 'demo.goharbor.io'
     HARBOR_USERNAME = 'fidel.rodriguez'
     HARBOR_PASSWORD = credentials('harborpas-secret')
+    DOCKERHUB_CREDENTIALS = credentials('dockerhub')
   }
   post {
     success {
