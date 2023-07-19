@@ -51,7 +51,7 @@ pipeline {
         sh 'docker push fidelrdgzjmz/java-imagen:${BUILD_NUMBER}'
         echo 'Push Image succes'
       }
-    } */   
+    }    
 
     stage("Deep Security Smart Check scan") {
       steps {
@@ -61,7 +61,7 @@ pipeline {
             smartcheckCredentialsId: "smartcheck-auth",
         ])
       }
-    }
+    }*/
 
     stage('Push Harbor') {
       steps {
