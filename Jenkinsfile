@@ -60,7 +60,6 @@ pipeline {
             smartcheckHost: "container.us-1.cloudone.trendmicro.com",
             smartcheckCredentialsId: "smartcheck-auth",
             preregistryScan: true,
-            preregistryCredentialsId: "preregistry-auth",
         ])
       }
     }
