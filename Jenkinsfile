@@ -68,8 +68,7 @@ pipeline {
         sh 'docker tag fidelrdgzjmz/java-imagen:${BUILD_NUMBER} demo.goharbor.io/jenkinsjavaimage/java-imagen:${BUILD_NUMBER}'
         sh 'docker login ${HARBOR_URL} -u ${HARBOR_USERNAME} -p ${HARBOR_PASSWORD}'
         sh 'docker push ${HARBOR_URL}/jenkinsjavaimage/java-imagen:${BUILD_NUMBER}'
-        sh 'docker rmi ${HARBOR_URL}/jenkinsjavaimage/java-imagen:${BUILD_NUMBER}'
-        sh 'docker rmi java-imagen:${BUILD_NUMBER}'        
+        sh 'docker rmi ${HARBOR_URL}/jenkinsjavaimage/java-imagen:${BUILD_NUMBER}'    
         sh 'docker images'
         echo 'Image Push succed'
       }
