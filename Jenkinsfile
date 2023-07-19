@@ -57,7 +57,7 @@ pipeline {
       steps {
         smartcheckScan([
             imageName: "fidelrdgzjmz/java-imagen:${BUILD_NUMBER}",
-            smartcheckHost: "container.us-1.cloudone.trendmicro.com",
+            smartcheckHost: "hub.docker.com",
             smartcheckCredentialsId: "smartcheck-auth",
             preregistryScan: true,
         ])
