@@ -44,14 +44,14 @@ pipeline {
         echo 'Build Image succes'
       }
     }
-    
+    /*
     stage('Push DockerHub') {
       steps {
         sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
         sh 'docker push fidelrdgzjmz/java-imagen:${BUILD_NUMBER}'
         echo 'Push Image succes'
       }
-    }    
+    } */   
 
     stage("Deep Security Smart Check scan") {
       steps {
@@ -60,6 +60,7 @@ pipeline {
             smartcheckHost: "hub.docker.com",
             smartcheckCredentialsId: "smartcheck-auth",
             preregistryScan: true,
+            preregistryCredentialsId: "dockerhub",
         ])
       }
     }
